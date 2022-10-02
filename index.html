@@ -1,0 +1,378 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAVAO ORIENTAL STATE UNIVERSITY</title>
+    <link rel="shortcut icon" href="https://dorsu.edu.ph/wp-content/uploads/2021/10/dorsu.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
+            rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="https://cdn-tailwindcss.vercel.app/"></script>
+    <script
+            defer
+            src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body class="bg-white outer-body">
+    <header>
+        <div class="static">
+        <div class=" flex justify-center bg-blue-800 w-full headerc">
+        <img src="https://dorsu.edu.ph/wp-content/uploads/2021/12/LOGO-2.png" alt="">
+        <div class="absolute bottom-0 left-0">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
+                <video autoplay loop muted plays-inline>
+                    <source src="https://rizapit132.github.io/WebsiteDorsu/lv_0_20220920102652.mp4" type="video">
+                </video>
+            </div>
+        </div>
+        </div>
+        </div>
+    </header>
+    <div class="sticky top-0">
+         <nav class=" relative px-5 flex justify-between items-center font-bold uppercase h-14 bg-yellow-400 drop-shadow-md">
+        <!-- This div and its children show up when screen's width >= 769px (md breakpoint) -->
+        <div id="main-nav"
+            class="hidden absolute top-14 right-0 px-5 py-10 bg-gray-700 h-screen flex flex-col 
+            md:flex md:space-y-0 md:relative md:top-0 md:right-0 md:p-0 md:flex-row md:h-full md:flex-grow md:justify-between md:items-center md:ml-10 md:bg-inherit">
+            <!-- Menu Links -->
+            <div
+                class="order-last flex flex-col items-end space-y-3  md:flex-row md:items-start md:order-first md:space-y-0 md:space-x-3">
+                <a class="text-white" href="#">Home</a>
+                <a class="hover:text-white" href="#">About</a>
+                <a class="hover:text-white" href="#">Academics</a>
+                <a class="hover:text-white" href="#">Research</a>
+                <a class="hover:text-white" href="#">Students</a>
+                <a class="hover:text-white" href="#">Resource</a>
+                <a class="hover:text-white" href="#">Admission</a>
+                <a class="hover:text-white" href="#">Grade Inquiry</a>
+            </div>
+            <!-- Search box -->
+            <form class="order-first mb-10 md:mb-0 md:order-last md:pr-8" action="">
+                <input class="w-72 py-1 pl-3 pr-10 rounded-full focus:outline-0" type="text" placeholder="Search.."
+                    name="search">
+                <button class="-ml-8 border-6 bg-trasparent" type="submit"><i
+                        class="fa fa-search text-gray-400"></i></button>
+            </form>
+        </div>
+        <a class="md:hidden text-white text-2xl" href="javascript:void(0)" onclick="toggleMenu()"><i
+                id="toggle-menu-icon" class="fa-bars fa-solid"></i></a>
+                <button type="button" class="button-switch  ml-2 relative inline-flex flex-shrink-0 bg-gray-200 h-6 w-11 border-2 border-transparent rounded-full cusrsor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-gray-200">
+
+                         <span class="outer-span relative inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200 pointer-events-none">
+                            <span class="light-switch absolute inset-0 h-full w-full flex items-center justify-center transition-opacity opacity-100 ease-out duration-100">
+                                <svg class="bg-white h-3 w-3 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                     <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                                </svg>
+                             </span>
+
+                        <span class="dark-switch absolute inset-0 h-full w-full flex items-center justify-center transition-opacity opacity-0 ease-in duration-200">
+                                 <svg class="bg-white h-3 w-3 text-indigo-600" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2256 2.00253C9.59172 1.94346 6.93894 2.9189 4.92893 4.92891C1.02369 8.83415 1.02369 15.1658 4.92893 19.071C8.83418 22.9763 15.1658 22.9763 19.0711 19.071C21.0811 17.061 22.0565 14.4082 21.9975 11.7743C21.9796 10.9772 21.8669 10.1818 21.6595 9.40643C21.0933 9.9488 20.5078 10.4276 19.9163 10.8425C18.5649 11.7906 17.1826 12.4053 15.9301 12.6837C14.0241 13.1072 12.7156 12.7156 12 12C11.2844 11.2844 10.8928 9.97588 11.3163 8.0699C11.5947 6.81738 12.2094 5.43511 13.1575 4.08368C13.5724 3.49221 14.0512 2.90664 14.5935 2.34046C13.8182 2.13305 13.0228 2.02041 12.2256 2.00253ZM17.6569 17.6568C18.9081 16.4056 19.6582 14.8431 19.9072 13.2186C16.3611 15.2643 12.638 15.4664 10.5858 13.4142C8.53361 11.362 8.73568 7.63895 10.7814 4.09281C9.1569 4.34184 7.59434 5.09193 6.34315 6.34313C3.21895 9.46732 3.21895 14.5326 6.34315 17.6568C9.46734 20.781 14.5327 20.781 17.6569 17.6568Z" fill="currentColor" />
+                                 </svg>
+                        </span>
+                             </span>
+                        </button>
+    </nav>
+    <!-- Javascript code -->
+                    
+        </div><!--end nav-->
+    <main>
+        <div class="w-full h-screen flex items-center justify-center" style="background-image: url('https://dorsu.edu.ph/wp-content/uploads/2021/10/background.jpg'); background-size:cover;"></div>
+
+        <!-- Notes -->
+        <section class="flex flex-col items-center justify-center mb-22">
+            <span class="namename text-4xl font-bold pt-9 pb-1 text-sky-800"> DAVAO ORIENTAL STATE UNIVERSITY NEWS AND EVENTS
+            </span>
+        </section>
+
+        <!-- Card List Section -->
+        <section x-data="xData()" class="py-10 px-12">
+            <!-- Card Grid -->
+            <div class="grid grid-flow-row gap-3 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+                <template x-for="post in posts">
+                    <!-- Card Item -->
+                    <div class="my-8 rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:scale-90"
+                        x-for="(post, index) in posts">
+                        <!-- Clickable Area -->
+                        <a _href="link" class="cursor-pointer">
+                            <figure>
+                                <!-- Image -->
+                                <img
+                                    :src="post.image + '?auto=format&fit=crop&w=400&q=50'"
+                                    class="rounded-t h-72 w-full object-cover" />
+                                <figcaption class="p-4">
+                                    <!-- Title -->
+                                    <p
+                                        class="text-lg mb-4 font-bold leading-relaxed text-gray-800 dark:text-gray-300"
+                                        x-text="post.title">
+                                        <!-- Post Title -->
+                                    </p>
+
+                                    <!-- Description -->
+                                    <small
+                                        class="leading-5 text-gray-500 dark:text-gray-400"
+                                        x-text="post.description">
+                                        <!-- Post Description -->
+                                    </small>
+
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </template>
+        </section>
+        <div class="px-6 py-4 text-center">
+                        <span class="inline-block bg-blue-700 rounded-full px-4 py-2 text-sm font-semibold  mr-2 text-yellow-100 hover:scale-105 duration-300 ease-in-out"> <a href="#">See more</a> </span>
+                    </div>
+        <script>
+                const posts = [
+                    {
+                        image:
+                            "https://dorsu.edu.ph/wp-content/uploads/2022/09/ENZO2-520x245.jpg",
+                        title: "DOrSU, OCVM sign MOA for Educational Assistance Program",
+                        description:
+                            " Dr. Roy G. Ponce, President of DorSU, and Vice Mayor Lorenzo Leon G. Rabat, representing the Office of the City Vice Mayor (OCVM), signed a Memorandum of Agreement (MOA) for the “Ka-asENZO” Thesis Educational Assistance...",
+                    },
+                    {
+                        image:
+                            "https://dorsu.edu.ph/wp-content/uploads/2022/09/6-520x245.jpg",
+                        title: "DOrSU Management meets for QMS Review",
+                        description:
+                            "The top management of Davao Oriental State University met today, September 19, 2022, at the DOrSU Boardroom, for the first Management Review to consider possible improvements, effectiveness, adequacy of...",
+                    },
+                    {
+                        image:
+                            "https://dorsu.edu.ph/wp-content/uploads/2022/09/th-2022-09-18T213221.567-520x245.jpg",
+                        title: "DOrSU employees trained to respond to emergencies",
+                        description:
+                            "Selected staff and faculty of Davao Oriental State University(DOrSU) received training from the City Disaster Risk Reduction and Management Office (CDRRMO), City of Mati, to prepare them for emergencies that might...",
+                    },
+                    {
+                        image:
+                            "https://dorsu.edu.ph/wp-content/uploads/2022/09/th-2022-09-14T110532.884-520x245.jpg",
+                        title: "US Pediatricians, DOrSU work toward reducing maternal, newborn mortality",
+                        description:
+                            "Dr. Roy G. Ponce, President of DorSU, and Vice Mayor Lorenzo Leon G. Rabat, representing the Office of the City Vice Mayor (OCVM), signed a Memorandum of Agreement (MOA) for the “Ka-asENZO” Thesis Educational Assistance...",
+                    },
+                    {
+                        image:
+                            "https://dorsu.edu.ph/wp-content/uploads/2022/08/MOA-CAREER-CENTRE-ACADEMIE-DORSU-AUGUST-15-2022-520x245.jpg",
+                        title: "DOrSU, CCATI sign MOA for Tech-voc Training, Nat’l Certification Activities",
+                        description:
+                            "DOrSU President Roy G. Ponce and Career Centre Academie and Technological Institute, Inc. (CCATI)President Ms. Mary Jane P. Trinidad signed a Memorandum of Agreement covering technical vocationaltraining and national certification activities for the Bachelor...",
+                    },
+                    {
+                        image:
+                            "https://dorsu.edu.ph/wp-content/uploads/2022/08/PROF-WIART-520x245.jpg",
+                        title: "French Scientist to engage as an Adjunct Professor at DOrSU",
+                        description:
+                            "The University of Malaysia Sabah Associate Professor Dr. Christophe Wiart will work as an adjunct professor at Davao Oriental State University, as confirmed by DOrSU President Dr. Roy G Ponce. During their initial conversation...",
+                    }
+                ];
+        </script>
+            <div class="mx-1">
+            <div class="container mx-auto my-6 border-b-4 border-yellow-500 w-full"></div>
+    </div>
+    <div class="text-center">
+            <h1 class="namename1 text-4xl font-bold pt-3 pb-1 text-sky-800">INSTITUTES AND DEPARTMENT</h1>
+        </div>
+    <div class="container mt-5 mx-auto px-2">
+<!--1st-->
+      <div class="md:flex">
+        <div class="flex-1 text-blue-800 text-center bg-stone-200 px-5 py-5 m-2 rounded">
+            <div class="lg:flex lg:items-center">
+                <div class="lg:flex-shrink-0">
+                    <a href="#"><img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/ials-1-300x150.png" alt="" /></a>
+                </div>
+                    <div class="mt-4 lg:mt-0 lg:ml-6">
+                        <div class="uppercase text-4xl tracking-wide text-sm text-green-600 font-bold">
+                             IALS
+                        </div>
+                             <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-black hover:text-green-600 rounded"> INSTITUTE OF AGRICULTURE AND LIFE SCIENCES 
+                             </a>
+                    </div>
+            </div>
+        </div>
+        <div class="flex-1 text-gray-700 text-center bg-stone-200 px-5 py-5 m-2 rounded">
+            <div class="lg:flex lg:items-center">
+                <div class="lg:flex-shrink-0">
+                    <a href="#"><img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/ibpa-1-300x150.png" alt="" /></a>
+                </div>
+                    <div class="mt-4 lg:mt-0 lg:ml-6">
+                         <div class="uppercase text-4xl tracking-wide text-sm text-rose-800 font-bold">
+                             IBPA
+                        </div>
+                             <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:text-rose-800">INSTITUTE OF BUSINESS AND PUBLIC AFFAIRS
+                             </a>
+                    </div>
+            </div>
+        </div>
+      </div>
+<!--1st-->
+      <div class="md:flex">
+        <div class="flex-1 text-gray-700 text-center bg-stone-200 px-5 py-5 m-2 rounded">
+            <div class="lg:flex lg:items-center">
+                <div class="lg:flex-shrink-0">
+                    <a href="#"> <img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/ice-1-300x150.png" alt="" /></a>
+                </div>
+                    <div class="mt-4 lg:mt-0 lg:ml-6">
+                         <div class="uppercase text-4xl tracking-wide text-sm text-[#FF6000] font-bold">
+                             ICE
+                        </div>
+                             <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:text-[#FF6000] "> INSTITUTE OF COMPUTING AND ENGINEERING
+                             </a>
+                    </div>
+            </div>
+        </div>
+        <div class="flex-1 text-gray-700 text-center bg-stone-200 px-5 py-5 m-2 rounded">
+            <div class="lg:flex lg:items-center">
+                <div class="lg:flex-shrink-0">
+                    <a href="#"><img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/ieet-300x150.png" alt="" /></a>
+                </div>
+                    <div class="mt-4 lg:mt-0 lg:ml-6">
+                         <div class="uppercase text-4xl tracking-wide text-sm text-[#0078FF]  font-bold">
+                             IETT
+                        </div>
+                             <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:text-[#0078FF] "> INSTITUTE OF EDUCATION AND TEACHER TRAINING
+                             </a>
+                    </div>
+            </div>
+        </div>
+      </div>
+<!--1st-->
+      <div class="md:flex">
+        <div class="flex-1 text-gray-700 text-center bg-stone-200 px-5 py-5 m-2 rounded">
+            <div class="lg:flex lg:items-center">
+                <div class="lg:flex-shrink-0">
+                    <a href="#"><img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/12/INAHS-1-300x150.png" alt="" /></a>
+                </div>
+                    <div class="mt-4 lg:mt-0 lg:ml-6">
+                         <div class="uppercase text-4xl tracking-wide text-sm text-[#FFD800]  font-bold">
+                             INAHS
+                        </div>
+                             <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:text-[#FFD800]"> INSTITUTE OF NURSING AND ALLIED HEALTH SCIENCES
+                             </a>
+                    </div>
+            </div>
+        </div>
+       <div class="flex-1 text-gray-700 text-center bg-stone-200 px-5 py-5 m-2 rounded">
+            <div class="lg:flex lg:items-center">
+                <div class="lg:flex-shrink-0">
+                    <a href="#"><img class="rounded-lg lg:w-64" src="https://dorsu.edu.ph/wp-content/uploads/2021/10/PRE-SCHOOL-300x113.png" alt="" /></a>
+                </div>
+                    <div class="mt-4 lg:mt-0 lg:ml-6">
+                         <div class="uppercase text-4xl tracking-wide text-center text-sm text-[#00D2B7] font-bold">
+                                &nbsp;   PRE-SCHOOL
+                        </div>
+                             <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:text-[#00D2B7]">  &nbsp;  &nbsp;  &nbsp; PRE SCHOOL
+                             </a>
+                    </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-blue-900 max-w flex text-white">
+        <div class="container mx-auto text-center">
+            <div class="py-3 pb-20 pt-[20px]">
+                <div class="flex flex-col items-center py-0">
+                     <img src="https://dorsu.edu.ph/wp-content/uploads/2021/12/LOGO-300x150.png" width="400">
+                </div>
+            <h1 class="text-5xl text-yellow-400">A university of excellence, innovation and inclusion.</h1>
+            </div>
+        </div>
+    </div>
+<footer class="bg-yellow-500 text-white pt-12 pb-8 px-4">
+    <div class="mx-auto px-4 container overflow-hidden flex flex-col lg:flex-row justify-between">
+        <div class="w-2/3 block sm:flex text-sm mt-6 lg:mt-0">
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
+             <li class="inline-block py-2 px-3 text-black text-lg font-bold uppercase font-medium tracking-wide">ARCHIVES</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; September 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; August 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; July 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; June 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; May 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; April 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; Febraury 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; January 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; November 2022</a>(4)</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">&#128197; October 2022</a>(4)</li>
+            </ul>
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
+                <li class="inline-block py-2 px-3 text-black text-lg font-bold uppercase font-medium tracking-wide">CAMPUSES</li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">BANAYBANAY CAMPUS</a></li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">CATEEL CAMPUS</a></li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">SAN ISIDRO CAMPUS</a></li>
+                <li class="font-[400] text-[17px] text-black-600 "><a href="#" class="inline-block py-2 px-3 font-[500] text-[17px] text-black-900 hover:text-blue-800 no-underline">BAGANGA CAMPUS</a></li>
+            </ul>
+            <div class="text-gray-700 flex flex-col w-full">
+                <div class="inline-block py-2 px-3 font-bold text-lg text-black uppercase font-medium tracking-wide">Follow Us</div>
+                <div class="flex pl-4 justify-start mt-2">
+                    <a class="block flex items-center text-blue-800 hover:scale-150 duration-500 ease-in-out mr-6 no-underline" href="https://www.facebook.com/dorsuofficial">
+                        <svg viewBox="0 0 24 24" class="fill-current w-7 h-7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.998 12c0-6.628-5.372-12-11.999-12C5.372 0 0 5.372 0 12c0 5.988 4.388 10.952 10.124 11.852v-8.384H7.078v-3.469h3.046V9.356c0-3.008 1.792-4.669 4.532-4.669 1.313 0 2.686.234 2.686.234v2.953H15.83c-1.49 0-1.955.925-1.955 1.874V12h3.328l-.532 3.469h-2.796v8.384c5.736-.9 10.124-5.864 10.124-11.853z" /></svg>
+                    </a>
+                    <a class="block flex items-center text-blue-800 hover:scale-150 duration-500 ease-in-out mr-6 no-underline" href="https://mobile.twitter.com/dorsuofficial">
+                        <svg viewBox="0 0 24 24" class="fill-current w-7 h-7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-4 mt-4 pt-6 font-medium text-blue-900 border-t border-blue-900 text-center"> Davao Oriental State University © 2022. All Rights Reserved.</div>
+</footer>
+    </main>
+    <script>
+    var button = document.querySelector(".button-switch");
+    var outerSpan = document.querySelector(".outer-span");
+    var lightSwitch = document.querySelector(".light-switch");
+    var darkSwitch = document.querySelector(".dark-switch");
+    var outerBody = document.querySelector(".outer-body");
+    var headerc = document.querySelector(".headerc");
+    var navc1 = document.querySelector(".navc1");
+    var home1 = document.querySelector(".home1");
+    var nav2 = document.querySelector(".nav2");
+    var nav3 = document.querySelector(".nav2");
+    var qwee = document.querySelector(".qwe");
+    var qwee1 = document.querySelector(".qwe1");
+    var qwee2 = document.querySelector(".qwe2");
+    var qwee3 = document.querySelector(".qwe3");
+    var qwee5 = document.querySelector(".qwe5");
+    var qwee6 = document.querySelector(".qwe6");
+    var namename = document.querySelector(".namename");
+    var namename1 = document.querySelector(".namename1");
+    var namename2 = document.querySelector(".namename2");
+    var arrrore = document.querySelector(".arrrore");
+    var arrrore1 = document.querySelector(".arrrore1");
+    var qazwsx = document.querySelector(".qazwsx");
+
+
+    button.addEventListener("click", function () {
+    outerSpan.classList.toggle("translate-x-5");
+    button.classList.toggle("bg-gray-800");
+    lightSwitch.classList.toggle("opacity-100");
+    darkSwitch.classList.toggle("opacity-100");
+    outerBody.classList.toggle("bg-gray-900");
+    headerc.classList.toggle("bg-sky-900");
+    qwee.classList.toggle("bg-gray-300");
+    qwee1.classList.toggle("bg-gray-300");
+    qwee2.classList.toggle("bg-gray-300");
+    qwee3.classList.toggle("bg-gray-300");
+    qwee5.classList.toggle("bg-gray-300");
+    qwee6.classList.toggle("bg-gray-300");
+    namename.classList.toggle("text-yellow-400");
+    namename1.classList.toggle("text-yellow-400");
+    namename2.classList.toggle("text-yellow-400");
+    arrrore.classList.toggle("text-white");
+    arrrore1.classList.toggle("text-white");
+    qazwsx.classList.toggle("bg-gray-900");
+    }
+); 
+</script>
+</body>
+</html>
